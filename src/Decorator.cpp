@@ -10,6 +10,7 @@ namespace oem {
 	{
 
 	}
+
 	void Decorator::setChild(NodeRef c)
 	{
 		mChild = c;

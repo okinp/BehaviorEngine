@@ -30,5 +30,4 @@ void BehaviorEngineApp::draw()
 {
 	gl::clear( Color( 0, 0, 0 ) ); 
 }
-
 CINDER_APP( BehaviorEngineApp, RendererGl )
