@@ -1,4 +1,4 @@
-#include "..\include\Inverter.h"
+#include "Inverter.h"
 
 namespace oem {
 	Inverter::Inverter()
