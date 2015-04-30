@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 44;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,10 +17,16 @@
 		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
 		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		856D538F44D94AC3A2A33143 /* BehaviorEngine_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = DF0A2D2A0A624E2AAE011147 /* BehaviorEngine_Prefix.pch */; };
-		B42D0DAA9FB540E8805D01D7 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = C10CA073DDD5414094E9058F /* CinderApp.icns */; };
-		21787E45D8F34A87B0D64034 /* Resources.h in Headers */ = {isa = PBXBuildFile; fileRef = 10F36F0F0FBB497E973A6751 /* Resources.h */; };
-		4D2AFE5D6C5C44EB9BFDB61C /* BehaviorEngineApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 963CCAFAC8BF409A84FE0230 /* BehaviorEngineApp.cpp */; };
+		8E2768F81AE51BD0004DD2E1 /* Composite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2768F01AE51BD0004DD2E1 /* Composite.cpp */; };
+		8E2768F91AE51BD0004DD2E1 /* Decorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2768F11AE51BD0004DD2E1 /* Decorator.cpp */; };
+		8E2768FA1AE51BD0004DD2E1 /* Inverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2768F21AE51BD0004DD2E1 /* Inverter.cpp */; };
+		8E2768FB1AE51BD0004DD2E1 /* Leaf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2768F31AE51BD0004DD2E1 /* Leaf.cpp */; };
+		8E2768FC1AE51BD0004DD2E1 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2768F41AE51BD0004DD2E1 /* Node.cpp */; };
+		8E2768FD1AE51BD0004DD2E1 /* Selector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2768F51AE51BD0004DD2E1 /* Selector.cpp */; };
+		8E2768FE1AE51BD0004DD2E1 /* Sequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2768F61AE51BD0004DD2E1 /* Sequence.cpp */; };
+		8E2768FF1AE51BD0004DD2E1 /* Succeeder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2768F71AE51BD0004DD2E1 /* Succeeder.cpp */; };
+		964DE4D341C64021A22700DB /* BehaviorEngineApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFBFBFC325DE4BD58F1E9BAF /* BehaviorEngineApp.cpp */; };
+		9AAC825A3BCB4D90B78097A9 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7F92B06CB7CF4DF0BD6A1088 /* CinderApp.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,14 +40,31 @@
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2C7C2D7B934E4C9AB44B3300 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
+		3029C866156140FFA6291054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
+		7F92B06CB7CF4DF0BD6A1088 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* BehaviorEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BehaviorEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		963CCAFAC8BF409A84FE0230 /* BehaviorEngineApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../src/BehaviorEngineApp.cpp; sourceTree = "<group>"; name = BehaviorEngineApp.cpp; };
-		10F36F0F0FBB497E973A6751 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../include/Resources.h; sourceTree = "<group>"; name = Resources.h; };
-		C10CA073DDD5414094E9058F /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; name = CinderApp.icns; };
-		AFC1EC1443FD4B98B352498E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; name = Info.plist; };
-		DF0A2D2A0A624E2AAE011147 /* BehaviorEngine_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = BehaviorEngine_Prefix.pch; sourceTree = "<group>"; name = BehaviorEngine_Prefix.pch; };
+		8E2768E71AE51BC6004DD2E1 /* BehaviorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BehaviorEngine.h; path = ../include/BehaviorEngine.h; sourceTree = "<group>"; };
+		8E2768E81AE51BC6004DD2E1 /* Composite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Composite.h; path = ../include/Composite.h; sourceTree = "<group>"; };
+		8E2768E91AE51BC6004DD2E1 /* Decorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Decorator.h; path = ../include/Decorator.h; sourceTree = "<group>"; };
+		8E2768EA1AE51BC6004DD2E1 /* Inverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Inverter.h; path = ../include/Inverter.h; sourceTree = "<group>"; };
+		8E2768EB1AE51BC6004DD2E1 /* Leaf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Leaf.h; path = ../include/Leaf.h; sourceTree = "<group>"; };
+		8E2768EC1AE51BC6004DD2E1 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Node.h; path = ../include/Node.h; sourceTree = "<group>"; };
+		8E2768ED1AE51BC6004DD2E1 /* Selector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Selector.h; path = ../include/Selector.h; sourceTree = "<group>"; };
+		8E2768EE1AE51BC6004DD2E1 /* Sequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sequence.h; path = ../include/Sequence.h; sourceTree = "<group>"; };
+		8E2768EF1AE51BC6004DD2E1 /* Succeeder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Succeeder.h; path = ../include/Succeeder.h; sourceTree = "<group>"; };
+		8E2768F01AE51BD0004DD2E1 /* Composite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Composite.cpp; path = ../src/Composite.cpp; sourceTree = "<group>"; };
+		8E2768F11AE51BD0004DD2E1 /* Decorator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Decorator.cpp; path = ../src/Decorator.cpp; sourceTree = "<group>"; };
+		8E2768F21AE51BD0004DD2E1 /* Inverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Inverter.cpp; path = ../src/Inverter.cpp; sourceTree = "<group>"; };
+		8E2768F31AE51BD0004DD2E1 /* Leaf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Leaf.cpp; path = ../src/Leaf.cpp; sourceTree = "<group>"; };
+		8E2768F41AE51BD0004DD2E1 /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Node.cpp; path = ../src/Node.cpp; sourceTree = "<group>"; };
+		8E2768F51AE51BD0004DD2E1 /* Selector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Selector.cpp; path = ../src/Selector.cpp; sourceTree = "<group>"; };
+		8E2768F61AE51BD0004DD2E1 /* Sequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sequence.cpp; path = ../src/Sequence.cpp; sourceTree = "<group>"; };
+		8E2768F71AE51BD0004DD2E1 /* Succeeder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Succeeder.cpp; path = ../src/Succeeder.cpp; sourceTree = "<group>"; };
+		92B5E0615CC74B04B440A4B9 /* BehaviorEngine_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = BehaviorEngine_Prefix.pch; sourceTree = "<group>"; };
+		FFBFBFC325DE4BD58F1E9BAF /* BehaviorEngineApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = BehaviorEngineApp.cpp; path = ../src/BehaviorEngineApp.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,10 +88,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
 		080E96DDFE201D6D7F000001 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				963CCAFAC8BF409A84FE0230 /* BehaviorEngineApp.cpp */,
+				8E2768F01AE51BD0004DD2E1 /* Composite.cpp */,
+				8E2768F11AE51BD0004DD2E1 /* Decorator.cpp */,
+				8E2768F21AE51BD0004DD2E1 /* Inverter.cpp */,
+				8E2768F31AE51BD0004DD2E1 /* Leaf.cpp */,
+				8E2768F41AE51BD0004DD2E1 /* Node.cpp */,
+				8E2768F51AE51BD0004DD2E1 /* Selector.cpp */,
+				8E2768F61AE51BD0004DD2E1 /* Sequence.cpp */,
+				8E2768F71AE51BD0004DD2E1 /* Succeeder.cpp */,
+				FFBFBFC325DE4BD58F1E9BAF /* BehaviorEngineApp.cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -120,18 +158,20 @@
 			name = BehaviorEngine;
 			sourceTree = "<group>";
 		};
-		01B97315FEAEA392516A2CEA /* Blocks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Blocks;
-			sourceTree = "<group>";
-		};
 		29B97315FDCFA39411CA2CEA /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				10F36F0F0FBB497E973A6751 /* Resources.h */,
-				DF0A2D2A0A624E2AAE011147 /* BehaviorEngine_Prefix.pch */,
+				8E2768E71AE51BC6004DD2E1 /* BehaviorEngine.h */,
+				8E2768E81AE51BC6004DD2E1 /* Composite.h */,
+				8E2768E91AE51BC6004DD2E1 /* Decorator.h */,
+				8E2768EA1AE51BC6004DD2E1 /* Inverter.h */,
+				8E2768EB1AE51BC6004DD2E1 /* Leaf.h */,
+				8E2768EC1AE51BC6004DD2E1 /* Node.h */,
+				8E2768ED1AE51BC6004DD2E1 /* Selector.h */,
+				8E2768EE1AE51BC6004DD2E1 /* Sequence.h */,
+				8E2768EF1AE51BC6004DD2E1 /* Succeeder.h */,
+				2C7C2D7B934E4C9AB44B3300 /* Resources.h */,
+				92B5E0615CC74B04B440A4B9 /* BehaviorEngine_Prefix.pch */,
 			);
 			name = Headers;
 			sourceTree = "<group>";
@@ -139,8 +179,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C10CA073DDD5414094E9058F /* CinderApp.icns */,
-				AFC1EC1443FD4B98B352498E /* Info.plist */,
+				7F92B06CB7CF4DF0BD6A1088 /* CinderApp.icns */,
+				3029C866156140FFA6291054 /* Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -180,6 +220,8 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BehaviorEngine" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -204,7 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B42D0DAA9FB540E8805D01D7 /* CinderApp.icns in Resources */,
+				9AAC825A3BCB4D90B78097A9 /* CinderApp.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +257,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D2AFE5D6C5C44EB9BFDB61C /* BehaviorEngineApp.cpp in Sources */,
+				8E2768FA1AE51BD0004DD2E1 /* Inverter.cpp in Sources */,
+				964DE4D341C64021A22700DB /* BehaviorEngineApp.cpp in Sources */,
+				8E2768F81AE51BD0004DD2E1 /* Composite.cpp in Sources */,
+				8E2768FC1AE51BD0004DD2E1 /* Node.cpp in Sources */,
+				8E2768F91AE51BD0004DD2E1 /* Decorator.cpp in Sources */,
+				8E2768FD1AE51BD0004DD2E1 /* Selector.cpp in Sources */,
+				8E2768FE1AE51BD0004DD2E1 /* Sequence.cpp in Sources */,
+				8E2768FB1AE51BD0004DD2E1 /* Leaf.cpp in Sources */,
+				8E2768FF1AE51BD0004DD2E1 /* Succeeder.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,24 +276,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				DEAD_CODE_STRIPPING = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BehaviorEngine_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = BehaviorEngine_Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder_d.a\"";
 				PRODUCT_NAME = BehaviorEngine;
-				WRAPPER_EXTENSION = app;
 				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
@@ -257,31 +307,31 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BehaviorEngine_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"NDEBUG=1",
 					"$(inherited)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = BehaviorEngine_Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder.a\"";
 				PRODUCT_NAME = BehaviorEngine;
 				STRIP_INSTALLED_PRODUCT = YES;
-				WRAPPER_EXTENSION = app;
 				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
-				CLANG_CXX_LIBRARY = "libc++";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = x86_64;
-				CINDER_PATH = "../../cinder_master";
+				CINDER_PATH = ../../../../SDKs/cinder_master;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
@@ -294,11 +344,11 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
-				CLANG_CXX_LIBRARY = "libc++";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = x86_64;
-				CINDER_PATH = "../../cinder_master";
+				CINDER_PATH = ../../../../SDKs/cinder_master;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";

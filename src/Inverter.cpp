@@ -1,16 +1,17 @@
-#include "..\include\Inverter.h"
+#include "Inverter.h"
 
 namespace oem {
 	Inverter::Inverter()
 	{
-
+        
 	}
 
 
 	Inverter::~Inverter()
 	{
-
+        
 	}
+    
 	Return Inverter::tick()
 	{
 		Return r;

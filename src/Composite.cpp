@@ -1,4 +1,4 @@
-#include "..\include\Composite.h"
+#include "Composite.h"
 
 namespace oem {
 	Composite::Composite()

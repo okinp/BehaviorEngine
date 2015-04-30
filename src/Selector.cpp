@@ -1,4 +1,4 @@
-#include "..\include\Selector.h"
+#include "Selector.h"
 
 namespace oem {
 	Selector::Selector()

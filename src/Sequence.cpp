@@ -1,4 +1,4 @@
-#include "..\include\Sequence.h"
+#include "Sequence.h"
 namespace oem {
 	Sequence::Sequence()
 	{

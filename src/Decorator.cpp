@@ -1,4 +1,4 @@
-#include "..\include\Decorator.h"
+#include "Decorator.h"
 
 namespace oem {
 	Decorator::Decorator()
