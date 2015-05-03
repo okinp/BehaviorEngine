@@ -8,5 +8,13 @@ namespace oem {
 	Node::~Node()
 	{
         
-	} 
+	}
+	Signal<void()>& Node::getTickSignal()
+	{
+		return sTick;
+	}
+	Signal<Return ()>&	Node::getReturnSignal()
+	{
+		return sReturn;
+	}
 }

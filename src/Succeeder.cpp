@@ -16,7 +16,8 @@ namespace oem {
 		{
 			return Return::Error;
 		}
-		Return r = mChild->tick();
+		mChild->getTickSignal().emit();
+		Return r;
 		if (r == Return::Success || r == Return::Failure)
 		{
 			r = Return::Success;

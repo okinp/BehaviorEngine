@@ -19,7 +19,7 @@ namespace oem {
 		{
 			return Return::Error;
 		}
-		r = mChild->tick();
+		//r = mChild->tick();
 		if ( r == Return::Success )
 		{
 			r = Return::Failure;

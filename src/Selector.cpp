@@ -14,7 +14,7 @@ namespace oem {
 		Return r;
 		for (auto child : mChildren)
 		{
-			r = child->tick();
+			child->getTickSignal().emit();
 			if (r != Return::Failure)
 				break;
 		}
