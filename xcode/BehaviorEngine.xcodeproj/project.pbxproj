@@ -17,6 +17,7 @@
 		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
 		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		8E11C0421AF7C52200C9FD77 /* Root.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E11C0401AF7C52200C9FD77 /* Root.cpp */; };
 		8E2768F81AE51BD0004DD2E1 /* Composite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2768F01AE51BD0004DD2E1 /* Composite.cpp */; };
 		8E2768F91AE51BD0004DD2E1 /* Decorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2768F11AE51BD0004DD2E1 /* Decorator.cpp */; };
 		8E2768FA1AE51BD0004DD2E1 /* Inverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2768F21AE51BD0004DD2E1 /* Inverter.cpp */; };
@@ -46,6 +47,8 @@
 		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		7F92B06CB7CF4DF0BD6A1088 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* BehaviorEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BehaviorEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E11C0401AF7C52200C9FD77 /* Root.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Root.cpp; path = ../include/Root.cpp; sourceTree = "<group>"; };
+		8E11C0411AF7C52200C9FD77 /* Root.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Root.h; path = ../include/Root.h; sourceTree = "<group>"; };
 		8E2768E71AE51BC6004DD2E1 /* BehaviorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BehaviorEngine.h; path = ../include/BehaviorEngine.h; sourceTree = "<group>"; };
 		8E2768E81AE51BC6004DD2E1 /* Composite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Composite.h; path = ../include/Composite.h; sourceTree = "<group>"; };
 		8E2768E91AE51BC6004DD2E1 /* Decorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Decorator.h; path = ../include/Decorator.h; sourceTree = "<group>"; };
@@ -172,6 +175,8 @@
 				8E2768EF1AE51BC6004DD2E1 /* Succeeder.h */,
 				2C7C2D7B934E4C9AB44B3300 /* Resources.h */,
 				92B5E0615CC74B04B440A4B9 /* BehaviorEngine_Prefix.pch */,
+				8E11C0401AF7C52200C9FD77 /* Root.cpp */,
+				8E11C0411AF7C52200C9FD77 /* Root.h */,
 			);
 			name = Headers;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0630;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BehaviorEngine" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -266,6 +272,7 @@
 				8E2768FE1AE51BD0004DD2E1 /* Sequence.cpp in Sources */,
 				8E2768FB1AE51BD0004DD2E1 /* Leaf.cpp in Sources */,
 				8E2768FF1AE51BD0004DD2E1 /* Succeeder.cpp in Sources */,
+				8E11C0421AF7C52200C9FD77 /* Root.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +335,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = x86_64;
 				CINDER_PATH = ../../../../SDKs/cinder_master;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -336,6 +342,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
 			};
@@ -345,7 +352,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = x86_64;
 				CINDER_PATH = ../../../../SDKs/cinder_master;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
