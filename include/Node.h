@@ -4,6 +4,7 @@
 #include "BehaviorEngine.h"
 namespace oem {
     using namespace cinder::signals;
+    typedef std::shared_ptr<class Node> NodeRef;
 class Node
 {
 public:
@@ -13,10 +14,11 @@ public:
 	virtual void			onReturn(const Return& r) = 0;
 	Signal<void()>&			getTickSignal();
 	Signal<Return ()>&		getReturnSignal();
+    virtual void            setChild( NodeRef node );
 protected:
     Signal<Return ()>		sReturn;
     Signal<void ()>			sTick;
     Connection              mConnection;
+    NodeRef                 mChild;
 };
-typedef std::shared_ptr<Node> NodeRef;
 }

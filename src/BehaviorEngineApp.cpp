@@ -9,10 +9,15 @@ using namespace std;
 
 class BehaviorEngineApp : public App {
   public:
+    BehaviorEngineApp()
+    :mRoot(oem::Root::getInstance())
+    {
+    };
 	void setup() override;
 	void mouseDown( MouseEvent event ) override;
 	void update() override;
 	void draw() override;
+    oem::Root& mRoot;
 };
 
 void BehaviorEngineApp::setup()
@@ -21,6 +26,8 @@ void BehaviorEngineApp::setup()
 
 void BehaviorEngineApp::mouseDown( MouseEvent event )
 {
+    std::cout << "Mouse pressed" << std::endl;
+    oem::Root& otherRoor(oem::Root::getInstance());
 }
 
 void BehaviorEngineApp::update()

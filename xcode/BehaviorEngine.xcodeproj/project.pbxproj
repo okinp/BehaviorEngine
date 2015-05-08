@@ -26,6 +26,7 @@
 		8E2768FD1AE51BD0004DD2E1 /* Selector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2768F51AE51BD0004DD2E1 /* Selector.cpp */; };
 		8E2768FE1AE51BD0004DD2E1 /* Sequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2768F61AE51BD0004DD2E1 /* Sequence.cpp */; };
 		8E2768FF1AE51BD0004DD2E1 /* Succeeder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2768F71AE51BD0004DD2E1 /* Succeeder.cpp */; };
+		8EF469FE1AFCE80100DFC087 /* TimedNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EF469FC1AFCE80100DFC087 /* TimedNode.cpp */; };
 		964DE4D341C64021A22700DB /* BehaviorEngineApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFBFBFC325DE4BD58F1E9BAF /* BehaviorEngineApp.cpp */; };
 		9AAC825A3BCB4D90B78097A9 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7F92B06CB7CF4DF0BD6A1088 /* CinderApp.icns */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,8 @@
 		8E2768F51AE51BD0004DD2E1 /* Selector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Selector.cpp; path = ../src/Selector.cpp; sourceTree = "<group>"; };
 		8E2768F61AE51BD0004DD2E1 /* Sequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sequence.cpp; path = ../src/Sequence.cpp; sourceTree = "<group>"; };
 		8E2768F71AE51BD0004DD2E1 /* Succeeder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Succeeder.cpp; path = ../src/Succeeder.cpp; sourceTree = "<group>"; };
+		8EF469FC1AFCE80100DFC087 /* TimedNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimedNode.cpp; sourceTree = "<group>"; };
+		8EF469FD1AFCE80100DFC087 /* TimedNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimedNode.h; sourceTree = "<group>"; };
 		92B5E0615CC74B04B440A4B9 /* BehaviorEngine_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = BehaviorEngine_Prefix.pch; sourceTree = "<group>"; };
 		FFBFBFC325DE4BD58F1E9BAF /* BehaviorEngineApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = BehaviorEngineApp.cpp; path = ../src/BehaviorEngineApp.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +173,8 @@
 				8E2768EA1AE51BC6004DD2E1 /* Inverter.h */,
 				8E2768EB1AE51BC6004DD2E1 /* Leaf.h */,
 				8E2768EC1AE51BC6004DD2E1 /* Node.h */,
+				8EF469FC1AFCE80100DFC087 /* TimedNode.cpp */,
+				8EF469FD1AFCE80100DFC087 /* TimedNode.h */,
 				8E2768ED1AE51BC6004DD2E1 /* Selector.h */,
 				8E2768EE1AE51BC6004DD2E1 /* Sequence.h */,
 				8E2768EF1AE51BC6004DD2E1 /* Succeeder.h */,
@@ -271,6 +276,7 @@
 				8E2768FD1AE51BD0004DD2E1 /* Selector.cpp in Sources */,
 				8E2768FE1AE51BD0004DD2E1 /* Sequence.cpp in Sources */,
 				8E2768FB1AE51BD0004DD2E1 /* Leaf.cpp in Sources */,
+				8EF469FE1AFCE80100DFC087 /* TimedNode.cpp in Sources */,
 				8E2768FF1AE51BD0004DD2E1 /* Succeeder.cpp in Sources */,
 				8E11C0421AF7C52200C9FD77 /* Root.cpp in Sources */,
 			);

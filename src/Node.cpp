@@ -9,6 +9,16 @@ namespace oem {
 	{
         
 	}
+    void    Node::setChild(NodeRef node)
+    {
+        if ( !node )
+        {
+            using namespace std;
+            EngineException e;
+            throw e;
+        }
+        mChild = node;
+    }
 	Signal<void()>& Node::getTickSignal()
 	{
 		return sTick;

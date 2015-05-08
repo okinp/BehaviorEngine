@@ -11,10 +11,17 @@
 namespace oem {
     Root::Root()
     {
-        std::cout << "Constructor called" << std::endl;
+        using namespace std;
+        cout << "Constructor called" << endl;
+    }
+    Root::~Root()
+    {
+        
     }
     Root& Root::getInstance()
     {
+        using namespace std;
+        cout << "getInstance called" << endl;
         static Root instance;
         return instance;
     }
