@@ -14,11 +14,10 @@ public:
 	virtual void			onReturn(const Return& r) = 0;
 	Signal<void()>&			getTickSignal();
 	Signal<Return ()>&		getReturnSignal();
-    virtual void            addChild( NodeRef node );
+	virtual void            addChild(NodeRef node) = 0;
 protected:
     Signal<Return ()>		sReturn;
     Signal<void ()>			sTick;
     Connection              mConnection;
-	std::vector<NodeRef>	mChildren;
 };
 }

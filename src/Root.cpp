@@ -18,6 +18,12 @@ namespace oem {
     {
         
     }
+	void    Root::addChild(NodeRef node)
+	{
+		mChild = node;
+		//sTick.connect(mChild->getTickSignal());
+	}
+
     Root& Root::getInstance()
     {
         using namespace std;
@@ -27,6 +33,7 @@ namespace oem {
     }
     Return Root::onTick()
     {
+		sTick.emit();
         return Return::Success;
     }
     void Root::onReturn(const Return& r)

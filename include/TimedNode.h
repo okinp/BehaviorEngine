@@ -19,14 +19,16 @@ namespace oem {
     public:
         TimedNode();
 		TimedNode(unsigned long millis);
+		virtual ~TimedNode();
         virtual Return	onTick();
         virtual void	onReturn(const Return& r);
+		virtual void    addChild(NodeRef node);
     private:
 		std::thread		mThread;
 		std::mutex		mMutex;
 		unsigned long	mDelay;
 		virtual void	run();
-
+		NodeRef			mChild;
     };
 }
 #endif /* defined(__BehaviorEngine__TimedNode__) */

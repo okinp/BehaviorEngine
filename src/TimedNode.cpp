@@ -19,6 +19,18 @@ namespace oem {
 	{
 		
 	}
+	TimedNode::~TimedNode()
+	{
+
+	}
+	void   TimedNode::addChild(NodeRef node)
+	{
+		if (!node)
+		{
+			throw EngineException();
+		}
+		mChild = node;
+	}
     Return TimedNode::onTick()
     {
 		if (mThread.joinable())

@@ -25,8 +25,8 @@ class BehaviorEngineApp : public App {
 void BehaviorEngineApp::setup()
 {
 	using namespace oem;
-	NodeRef timed(new TimedNode(10));
-	mRoot.addChild(timed);
+//	NodeRef timed(new TimedNode(10));
+//	mRoot.addChild(timed);
 }
 
 void BehaviorEngineApp::mouseDown( MouseEvent event )

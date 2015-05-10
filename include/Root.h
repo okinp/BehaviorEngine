@@ -19,10 +19,12 @@ namespace oem {
     public:
         static Root&    getInstance();
         Root();
-        ~Root();
+        virtual ~Root();
+		virtual void    addChild(NodeRef node);
         virtual Return  onTick();
         virtual void    onReturn(const Return& r);
     private:
+		NodeRef			mChild;
     };
 }
 #endif /* defined(__BehaviorEngine__Root__) */
