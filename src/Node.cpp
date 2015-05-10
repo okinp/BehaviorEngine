@@ -9,7 +9,7 @@ namespace oem {
 	{
         
 	}
-    void    Node::setChild(NodeRef node)
+    void    Node::addChild(NodeRef node)
     {
         if ( !node )
         {
@@ -17,7 +17,7 @@ namespace oem {
             EngineException e;
             throw e;
         }
-        mChild = node;
+        mChildren.push_back(node);
     }
 	Signal<void()>& Node::getTickSignal()
 	{

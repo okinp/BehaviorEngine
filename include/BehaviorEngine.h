@@ -9,6 +9,6 @@ namespace oem {
 	};
     struct EngineException : std::exception
     {
-        const char * what() const noexcept { return "EngineException\n"; }
+        const char * what() const { return "EngineException\n"; }
     };
 }

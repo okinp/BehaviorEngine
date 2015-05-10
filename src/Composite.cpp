@@ -9,11 +9,6 @@ namespace oem {
 	{
         
 	}
-	void Composite::addChild(NodeRef c)
-	{
-        
-		mChildren.push_back(c);
-	}
     Return  Composite::onTick()
     {
         std::cout << "onTick called" << std::endl;

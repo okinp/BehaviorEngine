@@ -9,9 +9,8 @@ namespace oem {
 		virtual	~Composite();
         virtual Return			onTick();
         virtual void			onReturn(const Return& r);
-		void					addChild(NodeRef c);
 	protected:
-		std::vector<NodeRef>	mChildren;
+
 	};
 }
 

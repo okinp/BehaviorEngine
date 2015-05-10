@@ -10,6 +10,7 @@
 #define __BehaviorEngine__TimedNode__
 
 #include <thread>
+#include <mutex>
 #include <chrono>
 #include "Node.h"
 
@@ -17,10 +18,15 @@ namespace oem {
     class TimedNode : public Node {
     public:
         TimedNode();
-        virtual Return onTick();
-        virtual void   onReturn(const Return& r);
+		TimedNode(unsigned long millis);
+        virtual Return	onTick();
+        virtual void	onReturn(const Return& r);
     private:
-        
+		std::thread		mThread;
+		std::mutex		mMutex;
+		unsigned long	mDelay;
+		virtual void	run();
+
     };
 }
 #endif /* defined(__BehaviorEngine__TimedNode__) */

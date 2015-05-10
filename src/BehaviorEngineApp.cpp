@@ -2,6 +2,7 @@
 #include "cinder/app/RendererGl.h"
 #include "cinder/gl/gl.h"
 #include "Root.h"
+#include "TimedNode.h"
 
 using namespace ci;
 using namespace ci::app;
@@ -12,6 +13,7 @@ class BehaviorEngineApp : public App {
     BehaviorEngineApp()
     :mRoot(oem::Root::getInstance())
     {
+
     };
 	void setup() override;
 	void mouseDown( MouseEvent event ) override;
@@ -22,12 +24,14 @@ class BehaviorEngineApp : public App {
 
 void BehaviorEngineApp::setup()
 {
+	using namespace oem;
+	NodeRef timed(new TimedNode(10));
+	mRoot.addChild(timed);
 }
 
 void BehaviorEngineApp::mouseDown( MouseEvent event )
 {
-    std::cout << "Mouse pressed" << std::endl;
-    oem::Root& otherRoor(oem::Root::getInstance());
+
 }
 
 void BehaviorEngineApp::update()
